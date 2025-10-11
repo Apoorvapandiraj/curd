@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">PhotoStudio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><button id="logoutBtn" class="btn btn-outline-light ms-3">Logout</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white">Capturing Moments, Creating Memories</h1>
+                    <p class="lead text-white-50">Professional photography services for weddings, portraits, and events.</p>
+                    <a href="#contact" class="btn btn-light btn-lg">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">About Me</h2>
+                    <p class="lead">I'm a passionate photographer with over 10 years of experience capturing life's most precious moments. From intimate portraits to grand weddings, I specialize in creating timeless images that tell your unique story.</p>
+                    <p>My approach combines technical expertise with artistic vision to deliver stunning results that exceed expectations.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop" alt="Photographer" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">My Work</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="work-item">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=300&fit=crop" alt="Wedding" class="img-fluid rounded">
+                        <div class="work-overlay">
+                            <h5>Weddings</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-item">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=300&fit=crop" alt="Portrait" class="img-fluid rounded">
+                        <div class="work-overlay">
+                            <h5>Portraits</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="work-item">
+                        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=300&fit=crop" alt="Events" class="img-fluid rounded">
+                        <div class="work-overlay">
+                            <h5>Events</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Photography Packages</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Basic Package</h5>
+                            <h3 class="text-primary">$500</h3>
+                            <ul class="list-unstyled">
+                                <li>2 Hours Session</li>
+                                <li>50 Edited Photos</li>
+                                <li>Online Gallery</li>
+                            </ul>
+                            <button class="btn btn-primary">Choose Package</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Standard Package</h5>
+                            <h3 class="text-primary">$800</h3>
+                            <ul class="list-unstyled">
+                                <li>4 Hours Session</li>
+                                <li>100 Edited Photos</li>
+                                <li>Print Release</li>
+                            </ul>
+                            <button class="btn btn-primary">Choose Package</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Premium Package</h5>
+                            <h3 class="text-primary">$1200</h3>
+                            <ul class="list-unstyled">
+                                <li>Full Day Session</li>
+                                <li>200 Edited Photos</li>
+                                <li>Album + Prints</li>
+                            </ul>
+                            <button class="btn btn-primary">Choose Package</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center text-white">
+        <div class="container">
+            <p>&copy; 2023 PhotoStudio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Fetch user info and display in nav or somewhere
+        getUser().then(data => {
+            if (data && data.username) {
+                // Maybe add to nav
+            }
+        });
+
+        // Logout
+        document.getElementById('logoutBtn').addEventListener('click', handleLogout);
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
